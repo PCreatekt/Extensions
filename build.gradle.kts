@@ -28,6 +28,9 @@ tasks {
             jvmTarget = "17"
         }
     }
+    runServer {
+        minecraftVersion("1.18.2")
+    }
 }
 
 java {
