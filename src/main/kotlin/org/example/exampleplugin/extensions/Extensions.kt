@@ -6,6 +6,7 @@ import java.nio.file.Files
 import kotlin.io.path.div
 import org.bukkit.Material
 import org.bukkit.Material.AIR
+import net.kyori.adventure.text.minimessage.MiniMessage
 
 fun location(world: String, x: Int, y: Int, z: Int): Location {
     if (!Bukkit.getWorlds().contains(Bukkit.getWorld(world))) throw NullPointerException("World $world is null!")
@@ -33,3 +34,6 @@ fun deleteWorld(world: String) {
     Files.createDirectories(worldPath / "poi")
     Files.createDirectories(worldPath / "region")
 }
+
+val mm = MiniMessage.miniMessage()
+
