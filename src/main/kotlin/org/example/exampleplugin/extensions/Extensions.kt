@@ -1,3 +1,5 @@
+package org.example.exampleplugin.extensions
+
 import net.axay.kspigot.main.KSpigotMainInstance
 import org.bukkit.Bukkit
 import org.bukkit.Location
