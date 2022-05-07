@@ -39,3 +39,6 @@ fun deleteWorld(world: String) {
 
 val mm = MiniMessage.miniMessage()
 
+fun spawnEntity(location: Location, entity: EntityType) {
+    location.world.spawnEntity(location, entity)
+}
