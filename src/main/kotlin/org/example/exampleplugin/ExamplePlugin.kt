@@ -1,6 +1,5 @@
 package org.example.exampleplugin
 
-import net.axay.kspigot.chat.KColors
 import net.axay.kspigot.main.KSpigot
 
 class ExamplePlugin : KSpigot() {
