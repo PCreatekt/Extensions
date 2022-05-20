@@ -20,4 +20,7 @@ class Message(private val prefix: MessagePrefix, private val message: String) {
             it.sendMessage(mm.deserialize(prefix.prefix + message))
         }
     }
+    fun sendBoldPlayerMessage(player: Player) {
+        player.sendMessage(mm.deserialize(prefix.prefix + message).decoration(TextDecoration.BOLD, true))
+    }
 }
