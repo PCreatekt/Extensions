@@ -4,6 +4,7 @@ import org.example.exampleplugin.extensions.mm
 import net.axay.kspigot.extensions.onlinePlayers
 import org.bukkit.command.CommandSender
 import org.bukkit.entity.Player
+import net.kyori.adventure.text.format.TextDecoration
 
 class Message(private val prefix: MessagePrefix, private val message: String) {
 
