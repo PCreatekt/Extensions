@@ -1,14 +1,15 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
+val githubRepo = "DasPhiller/Extensions"
+
 plugins {
     kotlin("jvm") version "1.6.10"
     id("io.papermc.paperweight.userdev") version "1.3.5"
-    id("net.minecrell.plugin-yml.bukkit") version "0.5.1"
-    id("xyz.jpenilla.run-paper") version "1.0.6"
+    `maven-publish`
 }
 
-group = "org.example"
-version = "1.0.0"
+group = "de.dasphiller"
+version = "1.1"
 
 repositories {
     mavenCentral()
@@ -20,6 +21,8 @@ dependencies {
 
     // KSpigot dependency
     implementation("net.axay:kspigot:1.18.2")
+
+    implementation("de.dasphiller:extensions:1.1")
 }
 
 tasks {
@@ -31,24 +34,45 @@ tasks {
             jvmTarget = "17"
         }
     }
-    runServer {
-        minecraftVersion("1.18.2")
-    }
 }
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17
 }
 
-bukkit {
-    name = "ExamplePlugin"
-    apiVersion = "1.18"
-    authors = listOf(
-        "Your Name",
-    )
-    main = "$group.exampleplugin.ExamplePlugin"
-    version = getVersion().toString()
-    libraries = listOf(
-        "net.axay:kspigot:1.18.2",
-    )
+publishing {
+    publications {
+        create<MavenPublication>(project.name) {
+            from(components["java"])
+            artifact(tasks.jar.get().outputs.files.single())
+            this.groupId = project.group.toString()
+            this.artifactId = project.name.toLowerCase()
+            this.version = project.version.toString()
+
+            pom {
+                name.set(project.name)
+                description.set("Extensions for Paper/KSpigot")
+
+                developers {
+                    developer {
+                        name.set("DasPhiller")
+                    }
+                }
+
+                licenses {
+                    license {
+                        name.set("GNU General Public License, Version 3")
+                        url.set("https://www.gnu.org/licenses/gpl-3.0.en.html")
+                    }
+                }
+
+                url.set("https://github.com/${githubRepo}")
+
+                scm {
+                    connection.set("scm:git:git://github.com/${githubRepo}.git")
+                    url.set("https://github.com/${githubRepo}/tree/main")
+                }
+            }
+        }
+    }
 }
