@@ -8,7 +8,7 @@ plugins {
     `maven-publish`
 }
 
-group = "de.dasphiller"
+group = "de.dasphiller.extensions"
 version = "1.1"
 
 repositories {
@@ -21,8 +21,6 @@ dependencies {
 
     // KSpigot dependency
     implementation("net.axay:kspigot:1.18.2")
-
-    implementation("de.dasphiller:extensions:1.1")
 }
 
 tasks {
