@@ -10,6 +10,7 @@ plugins {
 
 group = "ml.dasphiller.extensions"
 version = "1.1"
+description = "Extensions for Paper/KSpigot"
 
 repositories {
     mavenCentral()
@@ -54,7 +55,7 @@ publishing {
 
                 pom {
                     name.set(project.name)
-                    description.set("Extensions for Paper/KSpigot")
+                    description.set(project.description)
 
                     developers {
                         developer {
