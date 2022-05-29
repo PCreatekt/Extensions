@@ -8,7 +8,7 @@ plugins {
     `maven-publish`
 }
 
-group = "de.dasphiller.extensions"
+group = "ml.dasphiller.extensions"
 version = "1.1"
 
 repositories {

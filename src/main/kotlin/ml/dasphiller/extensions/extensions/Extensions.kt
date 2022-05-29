@@ -1,4 +1,4 @@
-package de.dasphiller.extensions.extensions
+package ml.dasphiller.extensions.extensions
 
 import net.axay.kspigot.main.KSpigotMainInstance
 import org.bukkit.Bukkit

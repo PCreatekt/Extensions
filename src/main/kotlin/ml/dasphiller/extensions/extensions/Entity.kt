@@ -1,4 +1,4 @@
-package de.dasphiller.extensions.extensions
+package ml.dasphiller.extensions.extensions
 
 import org.bukkit.entity.LivingEntity
 
