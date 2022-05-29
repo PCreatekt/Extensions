@@ -39,36 +39,42 @@ java {
 }
 
 publishing {
-    publications {
-        create<MavenPublication>(project.name) {
-            from(components["java"])
-            artifact(tasks.jar.get().outputs.files.single())
-            this.groupId = project.group.toString()
-            this.artifactId = project.name.toLowerCase()
-            this.version = project.version.toString()
+    repositories {
+        maven("https://oss.sonatype.org/service/local/staging/deploy/maven2") {
+            name = "ossrh"
+            credentials(PasswordCredentials::class)
+        }
+        publications {
+            create<MavenPublication>(project.name) {
+                from(components["java"])
+                artifact(tasks.jar.get().outputs.files.single())
+                this.groupId = project.group.toString()
+                this.artifactId = project.name.toLowerCase()
+                this.version = project.version.toString()
 
-            pom {
-                name.set(project.name)
-                description.set("Extensions for Paper/KSpigot")
+                pom {
+                    name.set(project.name)
+                    description.set("Extensions for Paper/KSpigot")
 
-                developers {
-                    developer {
-                        name.set("DasPhiller")
+                    developers {
+                        developer {
+                            name.set("DasPhiller")
+                        }
                     }
-                }
 
-                licenses {
-                    license {
-                        name.set("GNU General Public License, Version 3")
-                        url.set("https://www.gnu.org/licenses/gpl-3.0.en.html")
+                    licenses {
+                        license {
+                            name.set("GNU General Public License, Version 3")
+                            url.set("https://www.gnu.org/licenses/gpl-3.0.en.html")
+                        }
                     }
-                }
 
-                url.set("https://github.com/${githubRepo}")
+                    url.set("https://github.com/${githubRepo}")
 
-                scm {
-                    connection.set("scm:git:git://github.com/${githubRepo}.git")
-                    url.set("https://github.com/${githubRepo}/tree/main")
+                    scm {
+                        connection.set("scm:git:git://github.com/${githubRepo}.git")
+                        url.set("https://github.com/${githubRepo}/tree/main")
+                    }
                 }
             }
         }
