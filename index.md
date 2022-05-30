@@ -22,7 +22,22 @@ dependencies {
 val world = world("world_name")
 ```
 
-### Get a Location
+### Get an location
 ```kt
 val loc = location("world_name", 0, 0, 0)
+```
+
+### Drop an item
+```kt
+dropItem(location, Material)
+```
+
+### Delete a world
+```kt
+deleteWorld("world_name")
+```
+
+### Spawn an entity
+```kt
+spawnEntity(location, EntityType)
 ```
