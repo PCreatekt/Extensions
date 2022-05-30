@@ -52,3 +52,15 @@ player.clearInventory()
 player.boost(0, 1, 0)
 ```
 (this boosts the player a few blocks up)
+
+### Use minimessage
+```kt
+player.sendMessage(mm.deserialize("<color:#ce7e00>Hey"))
+```
+(Sends the player the message "Hey" in the color orange)
+
+### Get the plugin instance
+```kt
+INSTANCE.logger.info("test")
+```
+(Sends the message "test" in the console)
