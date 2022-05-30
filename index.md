@@ -41,3 +41,14 @@ deleteWorld("world_name")
 ```kt
 spawnEntity(location, EntityType)
 ```
+
+### Clear the inventory of a player
+```kt
+player.clearInventory()
+```
+
+### Boost a player
+```kt
+player.boost(0, 1, 0)
+```
+(this boosts the player a few blocks up)
