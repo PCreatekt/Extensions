@@ -1,7 +1,7 @@
 ## Version: 1.2 
 # Extensions
 ## Install
-Kotlin DSL:
+### Kotlin DSL:
 ```kt
 repositories {
     mavenCentral()
