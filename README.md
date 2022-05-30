@@ -1,4 +1,5 @@
 ## Version: 1.2 
+# new [Documentation](https://dasphiller.github.io/Extensions/)
 # Extensions
 ## Install
 ### Kotlin DSL:
