@@ -1,5 +1,5 @@
 # Extensions
-## Version: 1.2 
+## Version: 1.3
 ## Install
 ### Kotlin DSL:
 ```kt
