@@ -1,4 +1,4 @@
-package ml.dasphiller.extensions.extensions
+package de.dasphiller.extensions.extensions
 
 import net.axay.kspigot.extensions.geometry.LocationArea
 import org.bukkit.Bukkit

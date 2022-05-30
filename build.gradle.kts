@@ -8,12 +8,13 @@ plugins {
     `maven-publish`
 }
 
-group = "ml.dasphiller.extensions"
+group = "de.dasphiller.extensions"
 version = "1.1"
 description = "Extensions for Paper/KSpigot"
 
 repositories {
     mavenCentral()
+    maven("https://jitpack.io")
 }
 
 dependencies {
