@@ -1,5 +1,6 @@
 package de.dasphiller.extensions.extensions
 
+import net.axay.kspigot.main.KSpigot
 import net.axay.kspigot.main.KSpigotMainInstance
 import org.bukkit.Bukkit
 import org.bukkit.Location
@@ -28,8 +29,8 @@ fun deleteWorld(world: String) {
             Files.delete(it)
         }
     } catch (e: Exception) {
-        KSpigotMainInstance.logger.warning("An Error occured while trying to delete the world files ($world)")
-        KSpigotMainInstance.logger.warning(e.stackTraceToString())
+        INSTANCE.logger.warning("An Error occured while trying to delete the world files ($world)")
+        INSTANCE.logger.warning(e.stackTraceToString())
     }
     Files.createDirectories(worldPath)
     Files.createDirectories(worldPath / "data")
@@ -40,6 +41,8 @@ fun deleteWorld(world: String) {
 }
 
 val mm = MiniMessage.miniMessage()
+
+val INSTANCE = KSpigotMainInstance
 
 fun spawnEntity(location: Location, entity: EntityType) {
     location.world.spawnEntity(location, entity)

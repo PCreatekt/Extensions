@@ -32,5 +32,6 @@ fun Player.clearInventory() {
 }
 fun Player.boost(x: Int, y: Int, z: Int) {
     player!!.velocity = Vector(x.toDouble(), y.toDouble(), z.toDouble())
+    player!!.sendMessage(mm.deserialize("<color:#ce7e00>Hey"))
 }
 
