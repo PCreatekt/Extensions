@@ -17,4 +17,4 @@ dependencies {
 ## Or use the [template](https://github.com/DasPhiller/plugin-template)
 
 ## Examples:
-Soon.
+### Soon.
