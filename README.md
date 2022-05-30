@@ -1,4 +1,4 @@
-## Version: 1.2 
+## Version: 1.3
 # This is the old documentation here is the new [documentation](https://dasphiller.github.io/Extensions/)
 # Extensions
 ## Install
