@@ -1,7 +1,7 @@
 ## Version: 1.2 
 # Extensions
 ## Install
-kotlin DSL:
+Kotlin DSL:
 ```kt
 repositories {
     mavenCentral()
@@ -14,3 +14,6 @@ dependencies {
     implementation("com.github.dasphiller:extensions:VERSION")
 }
 ```
+
+## Examples:
+Soon.
