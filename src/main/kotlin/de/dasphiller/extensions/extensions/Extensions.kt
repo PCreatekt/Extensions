@@ -9,6 +9,7 @@ import kotlin.io.path.div
 import org.bukkit.Material
 import org.bukkit.Material.AIR
 import net.kyori.adventure.text.minimessage.MiniMessage
+import org.bukkit.World
 import org.bukkit.entity.EntityType
 
 fun location(world: String, x: Int, y: Int, z: Int): Location {
@@ -42,4 +43,9 @@ val mm = MiniMessage.miniMessage()
 
 fun spawnEntity(location: Location, entity: EntityType) {
     location.world.spawnEntity(location, entity)
+}
+
+fun world(world: String): World? {
+    if (!Bukkit.getWorlds().contains(Bukkit.getWorld(world))) throw NullPointerException("World $world is null")
+    return Bukkit.getWorld(world)
 }
