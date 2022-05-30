@@ -17,4 +17,12 @@ dependencies {
 ## Or use the [template](https://github.com/DasPhiller/plugin-template)
 
 ## Examples:
-Soon
+### Get a world:
+```kt
+val world = world("world_name")
+```
+
+### Get a Location
+```kt
+val loc = location("world_name", 0, 0, 0)
+```
