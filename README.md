@@ -14,7 +14,7 @@ dependencies {
     implementation("com.github.dasphiller:extensions:VERSION")
 }
 ```
-Or use this [template](https://github.com/DasPhiller/plugin-template)
+Or use the [template](https://github.com/DasPhiller/plugin-template)
 
 ## Examples:
 Soon.
