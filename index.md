@@ -14,6 +14,8 @@ dependencies {
     implementation("com.github.dasphiller:extensions:VERSION")
 }
 ```
+### Gradle DSL:
+look [here](https://jitpack.io/#dasphiller/extensions/1.3)
 ## Or use the [template](https://github.com/DasPhiller/plugin-template)
 
 ## Examples:
