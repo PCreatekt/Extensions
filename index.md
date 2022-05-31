@@ -76,3 +76,18 @@ player.sendMessage(mm.deserialize("<color:#ce7e00>Hey"))
 INSTANCE.logger.info("test")
 ```
 (Sends the message "test" in the console)
+
+### Create a world
+```kt
+createWorld("world_name", World.Environment.NORMAL)
+```
+(Creats a new overworld)
+
+### Use Message
+```kt
+Message(
+	MessagePrefix.DEFAULT,
+        "test"
+).sendPlayerMessage(player)
+```
+(Sends the player the Message "Test". The prefix is the name of you plugin)
