@@ -11,7 +11,9 @@ import org.bukkit.Material
 import org.bukkit.Material.AIR
 import net.kyori.adventure.text.minimessage.MiniMessage
 import org.bukkit.World
+import org.bukkit.WorldCreator
 import org.bukkit.entity.EntityType
+import org.bukkit.generator.BiomeProvider
 
 fun location(world: String, x: Int, y: Int, z: Int): Location {
     if (!Bukkit.getWorlds().contains(Bukkit.getWorld(world))) throw NullPointerException("World $world is null!")
@@ -51,4 +53,8 @@ fun spawnEntity(location: Location, entity: EntityType) {
 fun world(world: String): World? {
     if (!Bukkit.getWorlds().contains(Bukkit.getWorld(world))) throw NullPointerException("World $world is null")
     return Bukkit.getWorld(world)
+}
+
+fun createWorld(world: String, environment: World.Environment): WorldCreator {
+    return WorldCreator(world).environment(environment)
 }
