@@ -15,7 +15,17 @@ dependencies {
 }
 ```
 ### Gradle DSL:
-look [here](https://jitpack.io/#dasphiller/extensions/1.3)
+```kt
+repositories {	
+	maven { url 'https://jitpack.io' }
+}
+```
+
+```kt
+dependencies {
+    implementation 'com.github.dasphiller:extensions:1.4'
+}
+```
 ## Or use the [template](https://github.com/DasPhiller/plugin-template)
 
 ## Examples:
