@@ -90,4 +90,4 @@ Message(
         "test"
 ).sendPlayerMessage(player)
 ```
-(Sends the player the Message "Test". The prefix is the name of you plugin)
+(Sends the player the Message "Test". The prefix is the name of your plugin)
