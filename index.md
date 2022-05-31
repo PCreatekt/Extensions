@@ -23,7 +23,7 @@ repositories {
 
 ```kt
 dependencies {
-    implementation 'com.github.dasphiller:extensions:1.4'
+    implementation 'com.github.dasphiller:extensions:VERSION'
 }
 ```
 ## Or use the [template](https://github.com/DasPhiller/plugin-template)
