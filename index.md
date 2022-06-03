@@ -1,30 +1,16 @@
-# Pls don't use it now and wait until it's availible on mavencentral
 # Extensions
 ## Version: 2.0
 ## Install
 ### Kotlin DSL:
 ```kt
-repositories {
-    mavenCentral()
-    maven("https://jitpack.io")
-}
-```
-
-```kt
 dependencies {
-    implementation("com.github.dasphiller:extensions:VERSION")
+    implementation("de.dasphiller.extensions:extensions:2.0")
 }
 ```
 ### Gradle DSL:
 ```kt
-repositories {	
-	maven { url 'https://jitpack.io' }
-}
-```
-
-```kt
 dependencies {
-    implementation 'com.github.dasphiller:extensions:VERSION'
+    implementation 'de.dasphiller.extensions:extensions:2.0'
 }
 ```
 ## Or use the [template](https://github.com/DasPhiller/plugin-template)
