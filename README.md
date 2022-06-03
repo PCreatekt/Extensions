@@ -4,15 +4,8 @@
 ## Install
 ### Kotlin DSL:
 ```kt
-repositories {
-    mavenCentral()
-    maven("https://jitpack.io")
-}
-```
-
-```kt
 dependencies {
-    implementation("com.github.dasphiller:extensions:VERSION")
+    implementation("de.dasphiller.extensions:extensions:2.0")
 }
 ```
 ## Or use the [template](https://github.com/DasPhiller/plugin-template)
