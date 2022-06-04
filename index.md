@@ -1,5 +1,5 @@
 # Extensions
-![Latest version](https://img.shields.io/maven-central/v/de.dasphiller.extensions/extensions?color=yellow&label=latest%20version&style=for-the-badge)
+[ ![Latest version](https://img.shields.io/maven-central/v/de.dasphiller.extensions/extensions?color=yellow&label=latest%20version&style=for-the-badge) ](https://repo1.maven.org/maven2/de/dasphiller/extensions/extensions/)
 ## Install
 ### Kotlin DSL:
 ```kt
