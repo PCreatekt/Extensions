@@ -1,4 +1,4 @@
-## Version: 2.0
+![Latest version](https://img.shields.io/maven-central/v/de.dasphiller.extensions/extensions?color=pink&label=latest%20version&style=for-the-badge)
 # This is the old documentation here is the new [documentation](https://dasphiller.github.io/Extensions/)
 # Extensions
 ## Install
