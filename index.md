@@ -7,12 +7,15 @@ dependencies {
     implementation("de.dasphiller.extensions:extensions:2.0")
 }
 ```
+### And add ```"de.dasphiller.extensions:extensions:2.0"``` to the libraries of you plugin.yml
 ### Gradle DSL:
 ```kt
 dependencies {
     implementation 'de.dasphiller.extensions:extensions:2.0'
 }
 ```
+### And add ```"de.dasphiller.extensions:extensions:2.0"``` to the libraries of you plugin.yml
+
 ## Or use the [template](https://github.com/DasPhiller/plugin-template)
 
 ## Examples:
