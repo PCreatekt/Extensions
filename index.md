@@ -80,4 +80,4 @@ Message(
         "test"
 ).sendPlayerMessage(player)
 ```
-(Sends the player the Message "Test". The prefix is the name of your plugin)
+(Sends the player the Message "Test". The prefix is the prefix of your plugin. You can set the prefix in the plugin.yml)
