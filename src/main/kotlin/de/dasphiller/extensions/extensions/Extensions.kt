@@ -1,6 +1,5 @@
 package de.dasphiller.extensions.extensions
 
-import net.axay.kspigot.main.KSpigot
 import net.axay.kspigot.main.KSpigotMainInstance
 import org.bukkit.Bukkit
 import org.bukkit.Location
@@ -13,7 +12,6 @@ import net.kyori.adventure.text.minimessage.MiniMessage
 import org.bukkit.World
 import org.bukkit.WorldCreator
 import org.bukkit.entity.EntityType
-import org.bukkit.generator.BiomeProvider
 
 fun location(world: String, x: Int, y: Int, z: Int): Location {
     if (!Bukkit.getWorlds().contains(Bukkit.getWorld(world))) throw NullPointerException("World $world is null!")
@@ -55,6 +53,8 @@ fun world(world: String): World? {
     return Bukkit.getWorld(world)
 }
 
-fun createWorld(world: String, environment: World.Environment): WorldCreator {
-    return WorldCreator(world).environment(environment)
+fun createWorld(world_name: String, environment: World.Environment) {
+    val world: World?
+    val worldCreator = WorldCreator(world_name).environment(environment)
+    world = worldCreator.createWorld()
 }

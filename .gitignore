@@ -1,6 +1,8 @@
 .gradle
 /build/
 /run/
+/.gnupg/
+build.gradle.kts
 
 # Ignore Gradle GUI config
 gradle-app.setting
