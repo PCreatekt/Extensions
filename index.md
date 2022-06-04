@@ -1,5 +1,5 @@
 # Extensions
-## Version: 2.0
+![Latest version](https://img.shields.io/maven-central/v/de.dasphiller.extensions/extensions?color=yellow&label=latest%20version&style=for-the-badge)
 ## Install
 ### Kotlin DSL:
 ```kt
