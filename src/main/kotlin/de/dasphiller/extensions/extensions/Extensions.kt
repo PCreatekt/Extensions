@@ -1,5 +1,6 @@
 package de.dasphiller.extensions.extensions
 
+import net.axay.kspigot.extensions.onlinePlayers
 import net.axay.kspigot.main.KSpigotMainInstance
 import org.bukkit.Bukkit
 import org.bukkit.Location
@@ -57,4 +58,16 @@ fun createWorld(world_name: String, environment: World.Environment) {
     val world: World?
     val worldCreator = WorldCreator(world_name).environment(environment)
     world = worldCreator.createWorld()
+}
+
+fun resetWorlds() {
+    onlinePlayers.forEach {
+        it.kick(
+            mm.deserialize("<color:#93c47d>The worlds will get deleted now")
+        )
+    }
+    Bukkit.getWorlds().forEach {
+        deleteWorld(it.name)
+    }
+    Bukkit.spigot().restart()
 }
