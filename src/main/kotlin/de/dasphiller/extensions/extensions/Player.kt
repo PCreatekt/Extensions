@@ -5,21 +5,18 @@ import org.bukkit.Bukkit
 import org.bukkit.Location
 import org.bukkit.Material
 import org.bukkit.block.Block
+import org.bukkit.block.BlockFace
 import org.bukkit.entity.Player
 import org.bukkit.util.Vector
 
 fun Player.getUnderMaterial(): Material? {
-    if (player!!.location.subtract(0.0, 1.0, 0.0).block.type != Material.AIR) {
-        return null
-    } 
-    return player!!.location.subtract(0.0, 1.0, 0.0).block.type
+    if (player!!.location.block.getRelative(BlockFace.DOWN).type == Material.AIR) return null
+    return player!!.location.block.getRelative(BlockFace.DOWN).type
 }
 
 fun Player.getUnderBlock(): Block? {
-    if (player!!.location.subtract(0.0, 1.0, 0.0).block.type != Material.AIR) {
-        return null
-    }
-    return player!!.location.subtract(0.0, 1.0, 0.0).block
+    if (player!!.location.block.getRelative(BlockFace.DOWN).type == Material.AIR) return null
+    return player!!.location.block.getRelative(BlockFace.DOWN)
 }
 fun Player.isInArea(location: Location, location2: Location): Boolean =
     LocationArea(location, location2).isInArea(this.location, false, 0)
