@@ -53,7 +53,7 @@ player.clearInventory()
 
 ### Boost a player
 ```kt
-player.boost(0, 1, 0)
+player.boost(0.0, 1.0, 0.0)
 ```
 (this boosts the player a few blocks up)
 
