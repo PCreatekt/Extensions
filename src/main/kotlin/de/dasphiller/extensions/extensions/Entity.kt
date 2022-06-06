@@ -16,8 +16,8 @@ fun LivingEntity.killEntity() {
 fun Entity.isInArea(location: Location, location2: Location): Boolean =
     LocationArea(location, location2).isInArea(this.location, false, 0)
 
-fun Entity.boost(x: Int, y: Int, z: Int) {
-    velocity = Vector(x.toDouble(), y.toDouble(), z.toDouble())
+fun Entity.boost(x: Double, y: Double, z: Double) {
+    velocity = Vector(x, y, z)
 }
 
 fun Entity.getUnderMaterial(): Material? {

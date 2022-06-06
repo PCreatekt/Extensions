@@ -27,7 +27,7 @@ fun Player.killPlayer() {
 fun Player.clearInventory() {
     player!!.inventory.clear()
 }
-fun Player.boost(x: Int, y: Int, z: Int) {
-    player!!.velocity = Vector(x.toDouble(), y.toDouble(), z.toDouble())
+fun Player.boost(x: Double, y: Double, z: Double) {
+    player!!.velocity = Vector(x, y, z)
 }
 
