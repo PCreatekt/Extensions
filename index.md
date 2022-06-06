@@ -1,6 +1,7 @@
 # Extensions
 [ ![Latest version](https://img.shields.io/maven-central/v/de.dasphiller.extensions/extensions?color=yellow&label=latest%20version&style=for-the-badge) ](https://repo1.maven.org/maven2/de/dasphiller/extensions/extensions/)
 ## It's recommend to update just if there's a new version that's called like "x.0”. For example: "2.0"
+# Support: [Discord](https://dsc.gg/pcreate)
 ## Install
 ### Kotlin DSL:
 ```kt
