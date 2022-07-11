@@ -18,7 +18,7 @@ dependencies {
 ```
 ### And add ```"de.dasphiller.extensions:extensions:VERSION"``` to the libraries of your plugin.yml
 
-## Or use the [template](https://github.com/DasPhiller/plugin-template)
+## Or use the [template](https://github.com/pcreatekt/plugin-template)
 
 ## Examples:
 ### Get a world:
